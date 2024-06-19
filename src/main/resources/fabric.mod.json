@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "colonist",
+	"version": "${version}",
+	"name": "Colonist",
+	"description": "made by justnicko.",
+	"authors": [
+		"justnicko."
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/colonist/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nicko.colonist.Colonist"
+		],
+		"fabric-datagen": [
+			"net.nicko.colonist.ColonistDataGenerator"
+		],
+		"client": [
+			"net.nicko.colonist.ColonistModClient"
+		]
+	},
+	"mixins": [
+		"colonist.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
